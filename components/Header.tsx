@@ -15,10 +15,10 @@ const Header = async ({ user }: { user: User }) => {
                 </Link>
                 <nav className="hidden sm:block">
                     {/* initialStocks={initialStocks} */}
-                    <NavItems />
+                    <NavItems initialStocks={initialStocks} />
                 </nav>
 {/* user={user} initialStocks={initialStocks} */}
-                <UserDropdown user={user}  />
+                <UserDropdown user={user} initialStocks={initialStocks} />
             </div>
         </header>
     )
